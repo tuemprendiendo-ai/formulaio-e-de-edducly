@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Quiz de Finanzas – Educly" />
+    <meta
+      property="og:description"
+      content="Descubre tu perfil financiero en 2 minutos. Quiz gratuito con plan personalizado."
+    />
+    <!-- TODO: Reemplazar con favicon real de Educly -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://assets.fnlfx.com/6d9393819c16478cb3f7fc11de06b24a/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://assets.fnlfx.com/6d9393819c16478cb3f7fc11de06b24a/favicon-180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://assets.fnlfx.com/6d9393819c16478cb3f7fc11de06b24a/favicon-180.png"
+    />
+    <title>Quiz de Finanzas – Educly</title>
+    <style>
+      body { background-color: #FFFFFF; }
+      #root { height: 100%; }
+      .preloader {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid transparent;
+        border-top: 4px solid rgba(108, 99, 255, 0.6);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="preloader"><div class="spinner"></div></div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
